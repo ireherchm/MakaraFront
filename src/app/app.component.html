@@ -327,9 +327,9 @@
   <h2>Usuarios</h2>
   <p>Estos son nuestros usuarios makara!</p>
 
-  <div id="divUsers" *ngFor="let usuario of users">
-    <h2>{{ usuario.nombre | uppercase }}</h2>
-    <p>{{ usuario.apellido1 }}</p>
+  <div id="divUsers" *ngFor="let users of users">
+    <h2>{{ users[0].nombre | uppercase }}</h2>
+    <p>{{ users[0].apellido1 }}</p>
     <p>Probando pillar cambios</p>
   </div>
 

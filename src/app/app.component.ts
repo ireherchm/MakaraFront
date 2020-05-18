@@ -14,9 +14,9 @@ export class AppComponent {
     ) {
     }
 ngOnInit() {
-    this.usuarioService.getUsers()
+    this.usuarioService.getAllUsers()
     .subscribe(
-      (data:any) => { // Success
+      (data:any[]) => { // Success
         debugger;
         this.users = [data];
       },
